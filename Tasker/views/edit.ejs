@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <div class="task-container">
+        <h2> My Tasker</h2><br />
+    
+        <ul>
+         <%a.forEach(p =>{%>
+            <%if(p._id==id_update){%>
+
+             <li>
+
+                  <form action="/edit/<%=p._id%>" method="post">
+                      <input type="text" name="task" id="">
+                      <button type="submit">Submit</button>
+                    </form>
+
+             </li>
+<%}%>
+             <%})%>
+      </ul>
+ 
+      </div>
+ 
+</body>
+</html>
